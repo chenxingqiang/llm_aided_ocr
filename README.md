@@ -160,6 +160,22 @@ fi
 cd ~/.pyenv && git pull && cd -
 pyenv install 3.12
 ```
+2 1. Install Anaconda and Python 3.12 (if needed):
+```bash
+# Clone the repository
+git clone https://github.com/Dicklesworthstone/llm_aided_ocr    
+cd llm_aided_ocr          
+
+# Create a new conda environment with Python 3.12
+conda create -n llm_aided_ocr python=3.12 
+conda activate llm_aided_ocr
+
+# Upgrade pip, setuptools, and wheel
+python -m pip install --upgrade pip setuptools wheel
+
+# Install dependencies from requirements.txt
+pip install -r requirements.txt
+```
 
 2. Set up the project:
 
